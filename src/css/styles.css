@@ -8,8 +8,10 @@ body {
 
 img {
   border-radius: 50%;
-  max-width: 40%;
-  height: auto;
+  /* max-width: 40%;
+  height: auto; */
+  height: 500px;
+  width: 500px;
 }
 
 /* img.displayPhotos {

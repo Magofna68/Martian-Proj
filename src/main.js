@@ -7,16 +7,24 @@ import Rover from "./rover.js";
 
 // Main Objective
 // getPhotos(): use a for loop to display all images in the array
+
 // Optional:
 // Add more image photo info in getPhotos()
 // Incorporate a video
 // include the weather details on Mars
 
 function getPhotos(photoArray) {
+  let photoHTML = ``;
   if (photoArray.photos) {
-    $(".displayPhotos").html(
-      `<img src=${photoArray.photos[0].img_src}><img src=${photoArray.photos[100].img_src}>`
-    );
+    // if (photoArray.photos.length > 10) {
+    for (let i = 0; i <= 99; i += 10) {
+      photoHTML += `<img src=${photoArray.photos[i].img_src}>`;
+    }
+    // } else {
+    //   photoArray.photos.forEach((element, i) => {
+    //     photoHTML += `<img src=${photoArray.photos[i].img_src}>`
+    //   })
+    $(".displayPhotos").html(photoHTML);
   } else {
     $(".showErrors").text(`There was an error: ${photoArray.message}`);
   }
