@@ -20,8 +20,8 @@ img {
   
 } */
 
-.video {
-  min-width: 10%;
-  min-height: 10%;
-  padding-right: 50px;
+video {
+  height: 100%;
+  width: 115%;
+  padding-right: 100px;
 }
