@@ -15,7 +15,7 @@
 
 export default class Helicopter {
   static getVideo() {
-    return fetch(`https://images-api.nasa.gov/asset/JPL-20210401-TECHf-0001-Mars Helicopter Prepares for Takeoff UHD Master?api_key=${process.env.API_KEY}`)
+    return fetch(`https://images-api.nasa.gov/asset/JPL-20210401-TECHf-0001-Mars%20Helicopter%20Prepares%20for%20Takeoff%20UHD%20Master?api_key=${process.env.API_KEY}`)
       .then(function (response) {
         if (!response.ok) {
           throw Error(response.statusText);

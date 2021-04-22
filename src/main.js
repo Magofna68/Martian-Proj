@@ -46,7 +46,8 @@ $(document).ready(function () {
   //   $(".video").html(`<video><source src=${response.collection.items[7].href} type = "video/mp4" ></video > `);
   // });
   Helicopter.getVideo().then(function (response) {
-    console.log(response.collection.items[6].href);
-    $(".video").html(`<video> <source src=${response.collection.items[6].href} type="video"></video>`);
+    const url = response.collection.items[2].href.replaceAll(" ", "%20");
+    console.log(url);
+    $(".video").html(`<video controls> <source src=${url} type="video/mp4"></video>`);
   });
 });

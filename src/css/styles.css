@@ -19,3 +19,9 @@ img {
   height: auto;
   
 } */
+
+.video {
+  min-width: 10%;
+  min-height: 10%;
+  padding-right: 50px;
+}
