@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import Apod from "./apod.js";
 import Rover from "./rover.js";
+import Helicopter from "./helicopter.js";
 
 // Main Objective
 // getPhotos(): use a for loop to display all images in the array
@@ -39,5 +40,13 @@ $(document).ready(function () {
   });
   Rover.getRover().then(function (response) {
     getPhotos(response);
+  });
+  // Helicopter.getVideo().then(function (response) {
+  //   console.log(response.collection.items[7].href);
+  //   $(".video").html(`<video><source src=${response.collection.items[7].href} type = "video/mp4" ></video > `);
+  // });
+  Helicopter.getVideo().then(function (response) {
+    console.log(response.collection.items[6].href);
+    $(".video").html(`<video> <source src=${response.collection.items[6].href} type="video"></video>`);
   });
 });
