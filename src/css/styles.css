@@ -2,8 +2,9 @@ body {
   color: white;
   background-color: rgb(35, 5, 49);
   max-width: 1500px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   font-family: fantasy;
+  margin-left: 2%;
 }
 
 img {
@@ -12,6 +13,9 @@ img {
   height: auto; */
   height: 500px;
   width: 500px;
+  padding: 2%;
+  margin-left: 6%;
+  padding-left: 8%;
 }
 
 /* img.displayPhotos {
@@ -24,4 +28,5 @@ video {
   height: 100%;
   width: 115%;
   padding-right: 100px;
+  
 }
