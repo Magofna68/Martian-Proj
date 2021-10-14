@@ -10,7 +10,7 @@
     "lint": "eslint src/*.js",
     "test": "jest --coverage",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Brandon Magofna",
