@@ -1,10 +1,10 @@
-# Application Name
+# Martian-Project
 
-#### _{Brief description of application}, 4/16/2021_
+#### _Project will utilize an API call to display results from Nasa involving images & descriptions of Mars_ 
 
-#### By _**Brandon Magofna**_
+_4/16/2021_
 
-## Description
+#### By _**Brandon Magofna, Christina Plesa, & Tiffany Greathead**_
 
 _{}_
 
